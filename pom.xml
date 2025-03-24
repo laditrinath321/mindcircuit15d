@@ -17,12 +17,12 @@
  	<distributionManagement>
 		 <snapshotRepository>
 		    <id>NexusRepo</id>
-		    <url>http://34.228.75.5:8081/repository/Trinath-repo-snapshot/</url>
+		    <url>http://100.27.229.59:8081/repository/Trinath-repo-snapshot/</url>
 		 </snapshotRepository>
 		
 		<repository>
 		    <id>NexusRepo</id>
-		    <url>http://34.228.75.5:8081/repository/Trinath-repo-release/</url>
+		    <url>http://100.27.229.59:8081/repository/Trinath-repo-release/</url>
 		</repository>
   	</distributionManagement>
 
