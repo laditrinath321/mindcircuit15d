@@ -28,7 +28,7 @@ spec:
     spec:
       containers:
         - name: fbcont1
-          image: laditrinath321/batch15d:1
+          image: laditrinath321/batch15d:2
           ports:
             - containerPort: 8080
       
