@@ -1,0 +1,26 @@
+pipeline{
+    agent any
+    stages{
+        stage('clone git repo'){
+            steps{
+                echo "cloning code from github repo"
+                git branch: 'main', url: 'https://github.com/laditrinath321/mindcircuit15d.git'
+            }
+        }
+        
+        stage('Build artifacts'){
+            steps{
+                echo "Building artifacts using maven build tool"
+                sh 'mvn clean install'
+            }
+        }
+        
+        stage('Deploy to tomcat'){
+            steps{
+                echo "Deploy artifacts on to the tomcat"
+                deploy adapters: [tomcat9(alternativeDeploymentContext: '', credentialsId: 'Trinath-Tomcat', path: '', url: 'http://3.87.73.238:8081/')], contextPath: 'Trinath-APP', war: '**/*.war'
+            }
+        }
+    }
+    
+}
