@@ -17,12 +17,12 @@
 	<distributionManagement>
 		 <snapshotRepository>
 		    <id>NexusRepo</id>
-		    <url>http://54.205.185.238:8081/repository/batch15-repo-snapshot/</url>
+		    <url>http://54.205.204.36:8081/repository/maven-tri_snapshot/</url>
 		 </snapshotRepository>
 		
 		<repository>
 		    <id>NexusRepo</id>
-		    <url>http://54.205.185.238:8081/repository/batch15-repo-release/</url>
+		    <url>http://54.205.204.36:8081/repository/maven-tri_releases/</url>
 		</repository>
   	</distributionManagement>
 
